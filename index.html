@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- StartHeader -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">IT HOUSE</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Sahifa</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Ma'lumot</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">Kurslar</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">Mentorlar</a></li>
+                    <li class="nav__item"><a href="#prices" class="nav__link">Batafsil</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Bog'lanish</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header class="header" id="header">
+    <!-- endHeader -->
+
+    <!-- StartCorusel -->
+    <section id="home">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slider-content">
+                    <h1>DASTURLASHNI BIZ BILAN O'RGANING</h1>
+                    <hr>
+                    <p>IT HOUSE</p>
+                    <button>BOG'LANISH</button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-content">
+                    <h1>IT HOUSE KELAJAK SHU YERDA</h1>
+                    <hr>
+                    <p>IT - Zamon TALABI</p>
+                    <button>BOG'LANISH</button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-content">
+                    <h1>ZAMONAVIY KASBLAR</h1>
+                    <hr>
+                    <p>3Ds Max va Eksteryer</p>
+                    <button>BOG'LANISH</button>
+                </div>
+            </div>
+
+            <a class="prev" onclick="next(-1)">&#10094</a>
+            <a class="next" onclick="next(1)" id="next">&#10095</a>
+        </div>
+
+        <div class="slide">
+            <span class="circle active" onclick="circle(1)"></span>
+            <span class="circle" onclick="circle(2)"></span>
+            <span class="circle" onclick="circle(3)"></span>
+        </div>
+    </section>
+    <!-- endCorusel -->
+
+    <!-- StartAbout -->
+    <section id="about">
+        <div class="about" data-aos="fade-up" data-aos-duration="3000">
+            <div class="about_some">
+                <h2>BIZ HAQIMIZDA</h2>
+                <h1>Bizda 10 ga yaqin kurslarimiz mavjud</h1>
+                <hr>
+                <p>Hozirda IT zamon talabi bo'lib ,<br>
+                    dasturlashga doir vakansiyalar ham juda ko'p bo'lmoqda<br>
+                    </p>
+            </div>
+            <div class="about_card">
+                <div class="card">
+                    <i class="fa-solid fa-television"></i>
+                    <h3>3Ds Max va Eksteryer</h3>
+                    <p>Bu kursda siz arxitektura loyihalarni qilishingiz mumkin
+                        har xil modellar qilib daromad chiqasiz
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-pie-chart"></i>
+                    <h3>Web dasturlash</h3>
+                    <p>Bu kursda siz web sitelar yaratishni o'rganasiz 
+                        Front-end va Back-end ni 0 dan boshlaysiz
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-life-ring"></i>
+                    <h3>Telegram bot</h3>
+                    <p>Bu kursda siz telegramda bot yaratishingiz mumkin 
+                        bunda Python ni 0dan o'rganasiz
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <!-- endAbout -->
+
+    <!-- StartService -->
+    <section id="service">
+        <div class="service">
+            <div class="service_we">
+                <h1>Bizning kurslarimiz</h1>
+                <hr>
+                <p>Bizning kurslarimizni bitirib mutaxassis darajaga yetishasiz</p>
+            </div>
+            <div class="content">
+                <div class="right">
+                    <div class="right-text" data-aos="fade-down-right">
+                        <i class="fa-brands fa-android"></i>
+                        <div class="jobs">
+                            <h4>Android dasturlash</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-right">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <div class="jobs">
+                            <h4>Interyer dizayn</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-right">
+                        <i class="fa-brands fa-python"></i>
+                        <div class="jobs">
+                            <h4>Python Telegram bot</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-right">
+                        <i class="fa-solid fa-shield"></i>
+                        <div class="jobs">
+                            <h4>Kiber xavsizlik</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-right">
+                        <i class="fa-regular fa-file-powerpoint"></i>
+                        <div class="jobs">
+                            <h4>Foundation</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <img src="img/house1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="right-text" data-aos="fade-down-left">
+                        <i class="fa-solid fa-computer"></i>
+                        <div class="jobs">
+                            <h4>Web dasturlash</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-left">
+                        <i class="fa-solid fa-swatchbook"></i>
+                        <div class="jobs">
+                            <h4>SMM</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-left">
+                        <i class="fa-solid fa-wand-sparkles"></i>
+                        <div class="jobs">
+                            <h4>AutoCAD / 3ds Max</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-left">
+                        <i class="fa-solid fa-tachograph-digital"></i>
+                        <div class="jobs">
+                            <h4>Grafik dizayn</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+                    <div class="right-text" data-aos="fade-down-left">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="jobs">
+                            <h4>Ingliz tili</h4>
+                            <p>IT HOUSE - kelajak shu yerda</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- endService -->
+
+    <!-- StartVideo -->
+    <section>
+        <div class="video">
+            <div class="video_text">
+                <a href="https://youtu.be/u3IvnaJRH-U"><i class="fa-solid fa-play"></i></a>
+                <h1>IT HOUSE Video</h1>
+                <p>Dasturlashni biz bilan o'rganing</p>
+            </div>
+        </div>
+    </section>
+    <!-- endVideo -->
+
+    <!-- StartTeam -->
+    <section id="team">
+        <div class="team">
+            <div class="team_our">
+                <h1>Mentorlarimiz</h1>
+                <hr>
+                <p>Bizning mentorlarimiz 4-5 yil tajribaga ega va o'z
+                    sohalarini mutahasisiga aylanishgan </p>
+            </div>
+            <div class="team_card">
+                <div class="team_img" data-aos="fade-up-right">
+                    <div class="imgs">
+                        <img src="/img/itustoz.jpg" alt="">
+                    </div>
+                    <div class="team_text">
+                        <h1>Jonibek Turopov</h1>
+                        <p>Web developer</p>
+                        <p> Web dasturlash eng ommalashgan soha ekanligini inkor etib bo'lmaydi. Bu sohadagi "omadi
+                            chopgan" kishilar anchagina daromadga ega. </p>
+                    </div>
+                </div>
+                <div class="team_img">
+                    <div class="imgs">
+                        <img src="/img/team-05.jpg" alt="">
+                    </div>
+                    <div class="team_text">
+                        <h1>Jonh Doe</h1>
+                        <p>Grafics design</p>
+                        <p>Asosiysi, kursimiz o'qituvchisi shu sohada 5 yillik tajribaga ega, shunday ekan bemalol
+                            ishonch bildirib, ochiq darsimizda ishtirok etishingiz mumkin.</p>
+                    </div>
+                </div>
+                <div class="team_img">
+                    <div class="imgs">
+                        <img src="/img/team-06.jpg" alt="">
+                    </div>
+                    <div class="team_text">
+                        <h1>Cambrige</h1>
+                        <p>WordPress</p>
+                        <p>Dunyo aholisining 58.11% ijtimoiy tarmoqlardan foydalanadi. Bu ko'rsatkich SMM sohasining
+                            o'sayotganidan dalolat.
+                            Hozirda barcha soha: katta kompaniyalar, internet do'konlar, turli xizmatlar SMM ga juda
+                            muhtoj. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="team_bars">
+                <div class="bar">
+                    <h1>Mentorlarimiz natijalari</h1>
+                    <p>
+                        💪 Maskanimiz a'zolari, ya'ni o'qituvchilari va o'quvchilari - barchasi hamjihatlikda faoliyat
+                        yuritishadi. Bu yerga hech kim o'z - o'zidan kelib qolmagan.
+                        Har kimning o'ziga yarasha o'z o'rni bor. Birgalikda katta kuchmiz, zero "Kuch birlikda".😊
+                    </p>
+                </div>
+                <div class="bar_web">
+                    <div class="b_bar1">
+                        <div class="p_bar">
+                            <h4>Web dasturlash</h4>
+                            <h4>75%</h4>
+                        </div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="b_bar2">
+                        <div class="p_bar">
+                            <h4>Grafics dizayn</h4>
+                            <h4>90%</h4>
+                        </div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="b_bar3">
+                        <div class="p_bar">
+                            <h4>Kiber xavsizlik</h4>
+                            <h4>80%</h4>
+                        </div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="b_bar4">
+                        <div class="p_bar">
+                            <h4>SMM</h4>
+                            <h4>70%</h4>
+                        </div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- endTeam -->
+
+    <!-- StartLooking -->
+    <section id="works">
+        <div class="looking">
+            <div class="looking_content">
+                <div class="looking_text" data-aos="fade-up" data-aos-duration="3000">
+                    <h2>SMM NIMA ?</h2>
+                    <p>SMM - bir korhonani yurgizish bo'yicha mutahasis hisoblanadi</p>
+                    <button>MA'LUMOT</button>
+                </div>
+                <div class="looking_img">
+                    <img src="/img/Ijtimoiy.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- StartSimple -->
+    <section>
+        <div class="simple">
+            <div class="simple_left" data-aos="fade-up" data-aos-duration="3000">
+                <div class="simple_power">
+                    <h1>Web dasturlash</h1>
+                    <p>Web dasturlash kursi 9 oy boladi , unda Front-end va Back-end o'rgatiladi</p>
+                </div>
+                <div class="power_text">
+                    <h3>Front-end da nimalar o'rgatiladi?</h3>
+                    <p>Html Css Scss Bootstrap JavaScript Jquery 4 oyda o'rgatiladi </p>
+                    <h3>Back-end da nimalar o'rgatiladi?</h3>
+                    <p>Php MySql Laravel API OOP 4 oyda o'rgatiladi</p>
+                    <h3>Bir oy amaliyot</h3>
+                    <p>Bir oy amaliyot bilan shug'ullanasiz</p>
+                    <h3>WordPress</h3>
+                    <p>WordPressda ko'd yozmasdan site yatishingiz mumkin</p>
+                </div>
+            </div>
+            <div class="simple_img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="img/full_stack.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- endsimple -->
+
+    <!-- StartGallary -->
+    <div class="gallary">
+        <div class="gallary__text">
+            <h2>SCREENSHOTS GALLERY</h2>
+            <hr>
+            <p>Intagramdan screenshot qilib olingan rasmlar to'plamlari</p>
+        </div>
+        <div class="gallary__img">
+            <img src="img/house.jpg" alt="">
+        </div>
+    </div>
+    <!-- endGallary -->
+
+    <!-- StartPrices -->
+    <section id="prices">
+        <div class="prices">
+            <div class="prices_our">
+                <h2>KURSLARIMIZ HAQIDA</h2>
+                <hr>
+            </div>
+            <div class="prices_text">
+                <div class="prices_card" data-aos="zoom-out-right">
+                    <h3>Web dasturlash</h3>
+                    <p>uzs<span>997.000</span></p>
+                    <p>Front-end</p>
+                    <p>Back-end</p>
+                    <p>Full-stack</p>
+                    <p>OOP</p>
+                    <p>API</p>
+                    <button>Kursga  yozilish</button>
+                </div>
+                <div class="prices_card" data-aos="zoom-out-down">
+                    <h3>Interyer dizayn</h3>
+                    <p>uzs<span>997.000</span></p>
+                    <p>3Ds Max</p>
+                    <p>AutoCAD</p>
+                    <p>Corona </p>
+                    <p>Tashqi fasad</p>
+                    <p>Loyihalash</p>
+                    <button>Kursga yozilish</button>
+                </div>
+                <div class="prices_card">
+                    <h3>SMM</h3>
+                    <p>uzs<span>997.000</span></p>
+                    <p>Telegram</p>
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Linkeding</p>
+                    <button>Kursga  yozilish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- endPrices -->
+
+    <!-- StartStay -->
+    <section id="subscribe">
+        <div class="stay">
+            <div class="stay_text">
+                <div class="stay_our">
+                    <h3>Biz bilan bog'lanib ko'proq ma'lumot oling</h3>
+                </div>
+                <div class="stay_int">
+                    <input type="text" placeholder="ithouse@edu">
+                    <button>Biz bilan bog'lanish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- endStay -->
+
+    <!-- StartContact -->
+    <section id="contact">
+        <div class="contact">
+            <div class="contact_get" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="contact_text">
+                    <h2>IZOH QOLDIRING</h2>
+                    <hr>
+                    <p>IT HOUSE ga murojat qiling albatta bog'lanishadi</p>
+                </div>
+                <div class="contact_input">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>Ma'lumot yuborish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
